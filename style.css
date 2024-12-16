@@ -1,3 +1,30 @@
+body {
+  font-family: system-ui;
+  background: lightblue;
+  color: white;
+  text-align: center;
+}
+h1
+{
+  font-size: 100px;
+  font-family: copperplate;
+}
+p
+{
+  font-size: 50px;
+  text-align: left;
+  position: relative; /* Positioned relative to itself */
+  top: 20px; /* Move down by 20px */
+  left: 200px; /* Move right by 30px */
+}
+img
+{
+  width: 20%;
+  align: left;
+  position: relative; /* Positioned relative to itself */
+  top: 300px; /* Move down by 20px */
+  right: 650px; /* Move right by 30px */
+}
 img
 {
   width: 20%;
