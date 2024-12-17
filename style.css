@@ -8,14 +8,12 @@ h1
 {
   font-size: 100px;
   font-family: copperplate;
+  text-align: center;
 }
 p
 {
-  font-size: 50px;
-  text-align: left;
-  position: relative; /* Positioned relative to itself */
-  top: 20px; /* Move down by 20px */
-  left: 200px; /* Move right by 30px */
+  font-size: 20px;
+  text-align: center;
 }
 img
 {
@@ -25,11 +23,42 @@ img
   top: 300px; /* Move down by 20px */
   right: 650px; /* Move right by 30px */
 }
-img
+a:hover
 {
-  width: 20%;
-  align: left;
+  color: blue;
+}
+button
+{
+  width: 5%;
   position: relative; /* Positioned relative to itself */
-  top: 300px; /* Move down by 20px */
-  right: 650px; /* Move right by 30px */
+  bottom: 350px;
+   padding: 10px 25px;
+    font-size: 16px;
+    color: #3498db;
+    background: transparent;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3498db;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+button:hover {
+    color: white;
+}
+button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
