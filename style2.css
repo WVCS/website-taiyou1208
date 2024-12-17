@@ -1,1 +1,71 @@
-
+body {
+  font-family: system-ui;
+  background: lightblue;
+  color: white;
+  text-align: center;
+}
+h1
+{
+  font-size: 700%;
+  font-family: copperplate;
+  text-align: center;
+}
+p
+{
+  font-size: 200%;
+  text-align: center;
+}
+img
+{
+  width: 20%;
+  align: left;
+  position: relative; /* Positioned relative to itself */
+  top: 300px; /* Move down by 20px */
+  right: 650px; /* Move right by 30px */
+}
+a:hover
+{
+  color: blue;
+}
+button
+{
+  width: 5%;
+  position: relative; /* Positioned relative to itself */
+  bottom: 1000px;
+  right: 600px;
+   padding: 10px 25px;
+    font-size: 16px;
+    color: #3498db;
+    background: transparent;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3498db;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+button:hover {
+    color: white;
+}
+button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+iframe
+{
+  align: center;
+  position: relative; /* Positioned relative to itself */
+  left: 180px;
+}
